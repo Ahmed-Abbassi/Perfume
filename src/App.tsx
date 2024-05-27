@@ -6,8 +6,6 @@ import Footer from './layouts/footer/Footer';
 
 
 export default function App() {
-  const {colorMode, setColorMode} = useColorMode()
-setColorMode('light')
   // 2. Wrap ChakraProvider at the root of your app
   return (
   <Box bgColor={"whiteO"}>

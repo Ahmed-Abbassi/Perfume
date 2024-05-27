@@ -1,4 +1,4 @@
-import { Box, Input, Select, Text, TextProps } from '@chakra-ui/react'
+import { Box, Text, TextProps } from '@chakra-ui/react'
 function DownHeader() {
     const textProperties : TextProps = {
         color:"whiteO",
