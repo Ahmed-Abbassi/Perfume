@@ -1,4 +1,4 @@
-import {Box, useColorMode } from '@chakra-ui/react';
+import {Box } from '@chakra-ui/react';
 import Header from './layouts/header/Header';
 import Slider from './layouts/Slider/Slider';
 import Main from './layouts/Main/Main';
