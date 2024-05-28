@@ -8,8 +8,6 @@ import Euphoria from "../../images/Euphoria.jpg"
 import TomFord from "../../images/TomFord.jpg"
 import Taj from "../../images/Taj.jpg"
 import Dior from "../../images/dior.png"
-import L_Rectangles from '../RectanglesDesign/L_Rectangles'
-import R_Rectangles from '../RectanglesDesign/R_Rectangles'
 import SectionTitle from '../Titles/SectionTitle'
 
 

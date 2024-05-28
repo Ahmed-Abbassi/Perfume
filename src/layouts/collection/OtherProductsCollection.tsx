@@ -1,11 +1,9 @@
-import { Box, Image, Text } from '@chakra-ui/react'
+import { Box, Text } from '@chakra-ui/react'
 import AfterShave from "../../images/AfterShave.avif"
 import Body_cream from "../../images/Body-Cream_png.avif"
 import Body_lotion from "../../images/Body-Lotion.avif"
 import Shampo from "../../images/Shampo_png.avif"
 import ShowerGel from "../../images/ShowerGel.avif"
-import { color } from 'framer-motion'
-import { useState } from 'react'
 import SectionTitle from '../Titles/SectionTitle'
 const OtherProductsCollection = () => {
 
