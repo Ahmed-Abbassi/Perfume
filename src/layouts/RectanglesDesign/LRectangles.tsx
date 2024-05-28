@@ -1,7 +1,7 @@
 import { Box } from '@chakra-ui/react'
 import React from 'react'
 
-const L_Rectangles = ({color} : {color : string}) => {
+const LRectangles = ({color} : {color : string}) => {
   return (
     <Box display={"inline"}  width={"fit-content"} >
             <Box display={"flex"} alignItems={"center"} justifyContent={"space-between"} width={"80px"}>
@@ -13,4 +13,4 @@ const L_Rectangles = ({color} : {color : string}) => {
   )
 }
 
-export default L_Rectangles
+export default LRectangles
