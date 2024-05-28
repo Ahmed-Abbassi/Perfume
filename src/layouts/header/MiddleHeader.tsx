@@ -40,7 +40,7 @@ const MiddleHeader = () => {
         </Box>
         <Box w={"15%"} display={"flex"} justifyContent={"space-around"} className='icon list'>
         <FontAwesomeIcon
-        onMouseEnter={()=>{ setIconColor({...iconColor, icon1 :"#D4AF37" })}} style={{color: iconColor.icon1, cursor:"pointer"}} icon={faMagnifyingGlass} 
+        onMouseEnter={()=>{setIconColor({...iconColor, icon1 :"#D4AF37" })}} style={{color: iconColor.icon1, cursor:"pointer"}} icon={faMagnifyingGlass} 
         onMouseLeave={()=> setIconColor({...iconColor, icon1 : "#2C2C2C"})}/>
         <FontAwesomeIcon 
         onMouseEnter={()=>{setIconColor({...iconColor, icon2 : "#D4AF37"})}} style={{color: iconColor.icon2, cursor:"pointer"}} icon={faUser}
