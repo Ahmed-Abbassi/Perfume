@@ -4,7 +4,36 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { ChakraProvider, ColorModeScript } from '@chakra-ui/react';
 import theme from './theme/theme';
+import {RouterProvider, createBrowserRouter} from 'react-router-dom'
+import Error404 from './components/Error404';
+import Login from './components/Login';
+import Signin from './components/Signin';
 
+
+const router = createBrowserRouter([
+  {
+    path :'/', 
+    element : <App />,
+
+  },
+      {
+        path : "login",
+        element : <Login />
+
+      }, 
+      {
+        path :'signin',
+        element : <Signin />
+      }
+     
+  
+  ,
+  {
+    path:'*',
+    element :<Error404 />
+  } 
+  
+])
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -13,7 +42,8 @@ root.render(
     <React.StrictMode>
       <ColorModeScript initialColorMode={theme.config.initialColorMode} />
         <ChakraProvider theme={theme}>
-          <App />
+      <RouterProvider router={router} />
+          
         </ChakraProvider>
     </React.StrictMode>
 );

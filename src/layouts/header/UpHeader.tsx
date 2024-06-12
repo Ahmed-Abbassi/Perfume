@@ -1,6 +1,6 @@
-import { Box, Text ,BoxProps, TextProps} from '@chakra-ui/react'
+import { Box, Text ,BoxProps, TextProps, Button} from '@chakra-ui/react'
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
-import {faLocationDot} from "@fortawesome/free-solid-svg-icons"
+import {useNavigate} from "react-router-dom"
 import {faPhone} from "@fortawesome/free-solid-svg-icons"
 import {faEnvelope} from "@fortawesome/free-solid-svg-icons"
 
@@ -11,6 +11,11 @@ const UpHeader = () => {
     const communTextStyles : TextProps ={
         fontSize :"15px",
     }
+
+    //navigate instance
+    const navigate = useNavigate()
+    //navigation function
+    
   return (
     <Box>
         <Box bgColor={"blackO"} padding={"10px"} display={'flex'} justifyContent={"space-between"}>
@@ -29,8 +34,13 @@ const UpHeader = () => {
             </Box>
 
             <Box display={"flex"} justifyContent={"flex-end"} width={"calc(100% / 3)"} alignItems={"center"} className="location" {...communBoxStyles}>
-                <FontAwesomeIcon style={{cursor:"pointer"}} id='map' icon={faLocationDot} />
-                <Text  htmlFor={"map"} ml={"10px"} {...communTextStyles} fontSize={"sm"}>Tunisia, Monastir</Text>
+                {/* <FontAwesomeIcon style={{cursor:"pointer"}} id='map' icon={faLocationDot} />
+                <Text  htmlFor={"map"} ml={"10px"} {...communTextStyles} fontSize={"sm"}>Tunisia, Monastir</Text> */}
+                <Box width={"250px"} display={"flex"} justifyContent={"space-evenly"}>
+                <Button p={"10px"} onClick={()=>navigate("/login")}>Login</Button>
+                <Button p={"10px"}  onClick={()=>navigate("/signin")}>Signin</Button>
+                </Box>
+
             </Box>
 
         

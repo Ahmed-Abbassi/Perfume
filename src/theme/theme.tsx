@@ -10,7 +10,8 @@ const theme = extendTheme({
   colors : {
     blackO : "#2C2C2C",
     goldO  : "#D4AF37" ,
-    whiteO : "#FFFCF5"
+    whiteO : "#FFFCF5",
+    blueO : "#023E8A"
 
   }
  });
